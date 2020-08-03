@@ -16,6 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+    
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     x = input('Which city are you interested in? \n Chicago: 1 \n New York City: 2 \n Washington: 3 \n')
     if x == "1":
@@ -29,7 +30,6 @@ def get_filters():
     print(city)
 
     # TO DO: get user input for month (all, january, february, ... , june)
-
     y = input('Which month are you interested in? \n All: 0 \n Jan: 1 \n Feb: 2 \n Mar: 3 \n Apr: 4\n May: 5 \n Jun: 6 \n')
     
     if y == "0":
@@ -50,7 +50,6 @@ def get_filters():
     print(month)
     
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    
     z = input('Which day are you interested in? \n All: 0 \n Mon: 1 \n Tue: 2 \n Wed: 3 \n Thu: 4\n Fri: 5 \n Sat: 6 \n Sun: 7 \n')
 
     if z == "0":
@@ -126,7 +125,6 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    
     popular_month = df['month'].mode()
     
     type(popular_month)
